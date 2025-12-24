@@ -32,17 +32,17 @@ export function Pricing() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-4xl mx-auto mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-900">
             Tarifs transparents,
             <span className="block text-primary">pas de surprise</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-gray-700 leading-relaxed">
             Commencez gratuitement et évoluez selon vos besoins.
             Toutes les fonctionnalités sont incluses, pas de modules optionnels.
           </p>
@@ -195,23 +195,23 @@ export function Pricing() {
 
         {/* Additional Info */}
         <motion.div
-          className="text-center mt-12 space-y-4"
+          className="text-center mt-16 space-y-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-lg p-6 max-w-2xl mx-auto">
-            <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">
+          <div className="bg-green-50 border border-green-200 rounded-lg p-8 max-w-3xl mx-auto shadow-sm">
+            <h3 className="font-semibold text-green-800 mb-4 text-lg">
               🆓 Freemium généreux
             </h3>
-            <p className="text-sm text-green-700 dark:text-green-300">
+            <p className="text-green-700 leading-relaxed">
               Testez toutes les fonctionnalités gratuitement avec 5 documents, 3 conversations et 10 messages par discussion.
               Passez en Premium uniquement quand vous êtes convaincu !
             </p>
           </div>
 
-          <p className="text-sm text-muted-foreground max-w-md mx-auto">
+          <p className="text-gray-600 max-w-lg mx-auto text-base">
             Paiement sécurisé • Annulation facile • Support technique inclus
           </p>
         </motion.div>

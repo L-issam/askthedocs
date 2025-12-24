@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, Brain } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { appStoreLinks } from '@/lib/constants'
 
@@ -19,18 +19,18 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center px-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <Brain className="h-8 w-8 text-primary" />
+        <Link href="/" className="flex items-center space-x-3">
+          <img src="/icon.png" alt="AskTheDocs" className="h-8 w-8 rounded-lg" />
           <span className="text-xl font-bold">AskTheDocs</span>
         </Link>
 
         {/* Navigation Desktop */}
-        <nav className="hidden md:flex items-center space-x-6 ml-6">
+        <nav className="hidden md:flex items-center space-x-8 ml-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors px-3 py-2 rounded-md hover:bg-accent"
             >
               {item.name}
             </Link>
@@ -38,7 +38,7 @@ export function Header() {
         </nav>
 
         {/* Actions Desktop */}
-        <div className="hidden md:flex items-center space-x-4 ml-auto">
+        <div className="hidden md:flex items-center space-x-6 ml-auto">
           <div className="flex items-center space-x-2">
             {appStoreLinks.map((store) => (
               <a

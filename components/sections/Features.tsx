@@ -107,17 +107,17 @@ export function Features() {
 
         {/* How It Works */}
         <motion.div
-          className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl p-8 lg:p-12"
+          className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg border"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">
               Comment ça marche ?
             </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               Un processus simple en 4 étapes pour obtenir des réponses intelligentes
             </p>
           </div>

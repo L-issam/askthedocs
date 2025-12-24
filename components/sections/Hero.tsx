@@ -21,7 +21,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
+    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-700/25 bg-[size:20px_20px] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
 
@@ -35,7 +35,7 @@ export function Hero() {
           {/* Badge */}
           <motion.div
             variants={fadeInUp}
-            className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 mb-8"
+            className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-600 text-white mb-8 mx-auto"
           >
             <Shield className="w-4 h-4 mr-2" />
             IA 100% locale • Données privées
@@ -44,7 +44,7 @@ export function Hero() {
           {/* Main Headline */}
           <motion.h1
             variants={fadeInUp}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-center text-gray-900"
           >
             Posez des questions
             <span className="block text-primary">intelligentes</span>
@@ -54,7 +54,7 @@ export function Hero() {
           {/* Subtitle */}
           <motion.p
             variants={fadeInUp}
-            className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed text-center"
           >
             Découvrez les réponses cachées dans vos documents avec l'IA.
             Recherche sémantique avancée, réponses contextuelles,
@@ -64,19 +64,19 @@ export function Hero() {
           {/* Value Props */}
           <motion.div
             variants={fadeInUp}
-            className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-muted-foreground"
+            className="flex flex-wrap justify-center gap-8 mb-12 text-sm text-gray-600"
           >
-            <div className="flex items-center space-x-2">
-              <img src="/icon.png" alt="AskTheDocs" className="w-4 h-4 rounded" />
-              <span>Gemma 3 1B</span>
+            <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-full shadow-sm">
+              <img src="/icon.png" alt="AskTheDocs" className="w-5 h-5 rounded" />
+              <span className="font-medium">Gemma 3 1B</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Shield className="w-4 h-4 text-primary" />
-              <span>Données locales</span>
+            <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-full shadow-sm">
+              <Shield className="w-5 h-5 text-blue-600" />
+              <span className="font-medium">Données locales</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Zap className="w-4 h-4 text-primary" />
-              <span>Optimisé mobile</span>
+            <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-full shadow-sm">
+              <Zap className="w-5 h-5 text-green-600" />
+              <span className="font-medium">Optimisé mobile</span>
             </div>
           </motion.div>
 

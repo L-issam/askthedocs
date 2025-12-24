@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Brain, Twitter, Github, Mail } from 'lucide-react'
+import { Twitter, Github, Mail } from 'lucide-react'
 import { socialLinks, companyInfo, appStoreLinks } from '@/lib/constants'
 
 export function Footer() {
@@ -11,8 +11,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <Brain className="h-6 w-6 text-primary" />
+            <Link href="/" className="flex items-center space-x-3">
+              <img src="/icon.png" alt="AskTheDocs" className="h-6 w-6 rounded" />
               <span className="text-lg font-bold">AskTheDocs</span>
             </Link>
             <p className="text-sm text-muted-foreground">
